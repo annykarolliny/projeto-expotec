@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font1: 'Aldrich', sans-serif;
+    --font2: 'Audiowide', sans-serif;
+    --font3: 'Bruno Ace', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cabecalho{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+
+#expotec {
+    padding-right: 30px;
+    color: #9753C9;
+    font-size: 45px;
+    font-family: var(--font1);
+}
+
+.cabecalho-menu{
+    margin-right: 35px;
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho-menu > a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 15px;
+}
+
+.cabecalho-menu > a:hover {
+    color: #9753C9;
+}
+
+header > #inscrever {
+    text-decoration: none;
+    margin-right: 30px;
+    background-color: #d6b9cf;
+    color: black;
+    padding: 12px;
+    border-radius: 11px;
+    width: 100px;
+    font-family: var(--font1);
+    transition: all 0.3s;
+    font-size: 17px;
+}
+
+header > #inscrever:hover {
+    color: white;
+    background-color: #9753C9;
+}
+
+#inicio {
+    position: relative;
+    top: 70px;
+    bottom: 40px;
+}
+
+.logo-expotec {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.local {
+    background-color: #c532b2a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+
+.data {
+    background-color: #6976d9af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 120px;
+}
+
+.local > p {
+    font-family: var(--font1);
+    font-weight: bold;
+    color: #520544;
+    text-transform: uppercase;
+}
+
+.local > img {
+    width: 30px;
+    height: 30px;
+}
+
+.data > p {
+    font-family: var(--font1);
+    font-weight: bold;
+    color: #520544;
+}
+
+.data > img {
+    width: 30px;
+    height: 30px;
+}
+
+#sobre {
+    height: 600px;
+    background-color: #FAF7F7;
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.397);
+}
+
+#sobre > .fragmento {
+    background-color: #9753C9;
+    height: 600px;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#sobre > .fragmento > h2 {
+    color: white;
+    margin-left: 10px;
+    font-family: var(--font2);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#sobre > .informativo {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sobre > .informativo > h2 {
+    margin-left: 20px;
+    color: black;
+    font-family: var(--font1);
+    font-size: 40px;
+    width: 600px;
+    text-transform: uppercase;
+}
+
+#sobre > .informativo > hr {
+    width: 60px;
+    margin-left: 70px;
+    margin-top: 15px;
+    height: 6px;
+    background-color: #520544;
+    border: none;
+}
+
+#sobre > .informativo > p {
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 600px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: var(--font1);
+    color: rgb(104, 98, 98);
+}
+
+.atributos{
+    height: 550px;
+    background-color: #FAF7F7;
+}
+
+.atributos > .introducao {
+    height: 150px;
+}
+
+.atributos > .introducao > h2 {
+    color: black;
+    margin-top: 35px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.atributos > .introducao > hr {
+    width: 60px;
+    height: 6px;
+    background-color: #520544;
+    border: none;
+    margin-top: 40px;
+}
+
+.atributos > .introducao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.atributos > .lista {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.atributos > .lista > #div1 {
+    background-color: #9753C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.atributos > .lista > #div2 {
+    background-color: #8760ceb2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.atributos > .lista > #div3 {
+    background-color: #6976d970;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.atributos > .lista > #div4 {
+    background-color: #8760ceb2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.atributos > .lista > #div5 {
+    background-color: #9753C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.lista > div > p {
+    font-family: var(--font2);
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#programacao {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.397);
+}
+#programacao > h2 {
+    padding-top: 30px;
+    margin-left: 40px;
+    height: 40px;
+    font-size: 40px;
+    font-family: var(--font2);
+    text-transform: uppercase;
+    color: #9753C9;
+}
+
+.tabela > p {
+    text-align: left;
+    background-color: #9753C9;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: var(--font2);
+    padding: 5px;
+}
+
+#programacao > hr {
+    margin-top: 15px;
+    width: 1000px;
+    margin-left: 40px;
+}
+
+#programacao > .tabelas {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#programacao > .tabelas > .tabela {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 800px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#programacao > .tabelas > #encerramento {
+    margin-bottom: 30px;
+}
+
+#programacao > .tabelas > .tabela > table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table td, th {
+    font-family: var(--font1);
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#inscricao {
+    background-color: #8760cea2;
+}
+
+.comeco {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.comeco > h2 {
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+}
+
+.comeco > hr {
+    width: 60px;
+    height: 6px;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+}
+
+.comeco > p {
+    padding: 6px;
+    background-color: #9753C9;
+    width: 500px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--font2);
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.vantagens {
+    margin-left: 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.vantagens > div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.vantagens > div > p {
+    font-family: var(--font3);
+    font-size: 20px;
+    color: white;
+}
+
+#inscricao > #final {
+    padding: 30px;
+    text-align: center;
+}
+
+#inscricao > #final > a {
+    border: 1px solid white;
+    text-align: center;
+    font-family: var(--font2);
+    color: #520544;
+    font-size: 17px;
+    padding: 10px;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    width: 500px;
+}
+
+#inscricao > #final > a:hover {
+    background-color: #520544;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    padding: 10px;
+}
+
+footer > p {
+    margin-left: 430px;
+    margin-top: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer > p > a:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: #9753C9;
+}
+
+footer > img {
+    width: 150px;
+}
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="shortcut icon" href="assets/imagens/if.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav id="cabecalho-menu">
+            <a href="index.html">Home</a>
+        </nav>
+        <h2 id="expotec">EXPOTEC</h2>
+    </header>
+
+    <section class="inscricao">
+        <h1>Realize a sua inscrição</h1>
+        <h2>Venha fazer parte da <strong>EXPOTEC 2023</strong></h2>
+        <img src="assets/imagens/logo.svg" alt="Logo EXPOTEC">
+    </section>
+
+    <div id="form">
+        <h1>Inscreva-se</h1>
+        <p><strong>Seja bem vindo(a)</strong></p>
+
+        <form action="#" method="post" autocomplete="on">
+            <div class="espaco">
+                <label for="inome">Nome completo: </label>
+                <input class="texto" type="text" name="nome" id="inome" required placeholder="Seu nome" autocomplete="name">
+            </div>
+            <div class="espaco">
+                <label for="imatricula">Matrícula: </label>
+                <input class="texto" type="number" name="matricula" id="imatricula" required placeholder="Sua matrícula">
+            </div>
+            <div class="espaco">
+                <label for="" style="text-decoration: underline;">Curso: </label>
+                <input type="radio" name="turma" id="imineracao" value="mineração" style="margin-left: 10px;">
+                <label for="imineracao" style="margin-right: 5px;">Mineração</label>
+                <input type="radio" name="turma" id="iinformatica" value="informática" style="margin-left: 11px;">
+                <label for="iinformática" style="margin-right: 5px;">Informática</label>
+            </div>
+            <div class="espaco">
+                <label for="" style="text-decoration: underline;">Turno: </label>
+                <input type="radio" name="turno" id="imatutino" value="matutino" style="margin-left: 10px">
+                <label for="imatutino" style="margin-right: 5px;">Matutino</label>
+                <input type="radio" name="turno" id="ivespertino" value="vespertino" style="margin-left: 11px;">
+                <label for="ivespertino" style="margin-right: 5px;">Vespertino</label>
+            </div>
+            <div class="espaco">
+                <label for="iturma">Turma: </label>
+                <select name="turma" id="iturma">
+                    <option value="">Selecione uma turma</option>
+                    <option value="1">1° ano</option>
+                    <option value="2">2° ano</option>
+                    <option value="3">3° ano</option>
+                    <option value="4">4° ano</option>
+                </select>
+            </div>
+        </form>
+        <button type="submit">Inscrever-se</button>
+    </div>
+
+    <footer>
+        <img src="assets/imagens/logo-ifrn.svg" alt="Logo do IFRN Campus Parelhas">
+        <p>© 2023, <a href="https://github.com/annykarolliny" target="_blank">Anny Karolliny</a>.</p>
+    </footer>
+
+</body>
+</html>
